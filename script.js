@@ -1,6 +1,14 @@
 setFilter();
 setFilter(2);
 
+const showMenuButton = document.getElementById("showMenuButton");
+const popupMenu = document.getElementById("popupMenu");
+
+showMenuButton.addEventListener("click", function () {
+  popupMenu.style.display =
+    popupMenu.style.display === "block" ? "none" : "block";
+});
+
 function setFilter(filterNum = "") {
   document.addEventListener("DOMContentLoaded", function () {
     const customSelect = document.querySelector(`.custom-select${filterNum}`);

@@ -114,8 +114,8 @@ ul {
 }
 
 .account-info {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
   background-color: #fff;
   padding: 20px;
   border-radius: 10px;
@@ -200,4 +200,62 @@ footer {
   font-weight: 100;
   text-align: center;
   margin-bottom: 2rem;
+}
+
+#showMenuButton {
+  display: none;
+}
+
+@media screen and (max-width: 500px) {
+  .account-info {
+    grid-template-columns: auto;
+  }
+
+  .account-details {
+    margin-bottom: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    font-size: 0.9rem;
+  }
+
+  ul {
+    padding-top: 10px;
+    position: static;
+    background: #ffc914;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    max-width: 150px;
+    margin: 0 auto;
+  }
+
+  .home-img {
+    margin-right: 1rem;
+    margin-left: 1.5rem;
+  }
+
+  .home-img:hover,
+  .members-img:hover,
+  .list-img:hover {
+    border-bottom: 3px solid #000;
+  }
+
+  #popupMenu ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  #popupMenu li {
+    padding: 10px;
+    text-align: center;
+  }
+
+  #popupMenu a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+  }
 }
