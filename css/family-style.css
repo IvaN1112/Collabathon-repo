@@ -1,0 +1,39 @@
+h2 {
+  border-left: none;
+}
+
+.transactions-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
+  grid-gap: 10px;
+}
+
+.incomes,
+.expenses {
+  border-left: 3px solid #ffc914;
+  padding-left: 0.8rem;
+}
+
+.incomes {
+  margin-right: 3rem;
+}
+
+.incomes .value {
+  margin-right: 0.3rem;
+}
+
+.expenses .value {
+  margin-right: 0.3rem;
+}
+
+.expenses {
+  margin-left: 2rem;
+}
+
+.t-item-1 {
+  margin-top: 0.2rem;
+}
+
+.transactions-heading {
+  margin-bottom: 2rem;
+}

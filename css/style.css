@@ -1,0 +1,192 @@
+/* Reset some default styles and set a background color */
+body,
+h1,
+h2,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f2f2f2;
+  color: #333;
+  font-size: 16px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+footer {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  padding: 30px 20px;
+  border-radius: 0 0 10px 10px;
+  color: white;
+  text-align: center;
+}
+
+/* Header Styles */
+header {
+  padding: 20px;
+  color: #000;
+  text-align: center;
+}
+
+h1 {
+  font-weight: 100;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 1.15rem;
+}
+
+.tabs ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.tabs li {
+  margin: 0 20px;
+  cursor: pointer;
+  font-size: 18px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.tabs li.active-tab {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Main Content Styles */
+
+ul {
+  position: absolute;
+  display: flex;
+  top: 2rem;
+  right: 2rem;
+}
+
+.home-img {
+  margin-right: 1.5rem;
+  padding-bottom: 0.3rem;
+}
+
+.home-img,
+.members-img {
+  box-sizing: border-box;
+  border-bottom: 3px solid #ffc914;
+  transition: 0.3s all linear;
+}
+
+.home-img:hover,
+.members-img:hover {
+  border-bottom: 7px solid #ffc914;
+}
+
+.tab-content {
+  margin-top: 20px;
+}
+
+.account-info {
+  display: flex;
+  justify-content: space-around;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.account-details,
+.account-balance {
+  text-align: center;
+}
+
+.account-details p,
+.account-balance p {
+  font-size: 20px;
+  color: #333;
+}
+
+footer {
+  background: #002e3c;
+}
+
+.transaction-history {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.transaction-list {
+  margin: 0 2rem;
+}
+
+.transaction-container {
+  margin-top: 2rem;
+}
+
+.transaction {
+  display: flex;
+  justify-content: space-between;
+}
+
+.value {
+  display: flex;
+  align-items: center;
+}
+
+.separator {
+  height: 2px;
+  background-color: #ffc914;
+  margin-top: 0.5rem;
+}
+
+.trans-name {
+  display: inline-block;
+  margin-bottom: 0.4rem;
+  font-weight: bold;
+}
+
+.income,
+.spend {
+  flex: 1;
+}
+
+.income ul li,
+.spend ul li {
+  margin: 10px 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.income ul li {
+  color: gray; /* Green color for income */
+}
+
+.spend ul li {
+  color: #f44336; /* Red color for spendings */
+}
+
+.transactions-heading {
+  font-weight: 100;
+  text-align: center;
+  margin-bottom: 2rem;
+}
